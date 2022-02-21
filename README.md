@@ -11,3 +11,10 @@ Command:
 
 A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).  This recording will
 be removed by 28/2/2022.
+
+To simulate new logs going into `test.log`, you can open another terminal window and do:
+`cat 1.log >> test.log` to create the 1st line of the sample log
+`cat 2.log >> test.log` to create the 2nd line of the sample log
+
+If you have access to more logs, you can simply concat mulitple lines into test.log. Main.py will 
+run till it runs out of lines and then sleep for 1 second before checking again.
