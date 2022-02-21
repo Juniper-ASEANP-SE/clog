@@ -9,4 +9,5 @@ Command:
 
 `./main.py`
 
-A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).
+A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).  This recording will
+be removed by 28/2/2022.
