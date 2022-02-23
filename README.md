@@ -6,9 +6,15 @@ cleaned up log is send to console but can be easily modified to send via system 
 facilities.
 
 Command:
+```
+usage: main.py [-h] [input]
 
-`./main.py`
+positional arguments:
+  input       Input syslog file. Default: test.log
 
+optional arguments:
+  -h, --help  show this help message and exit
+```
 A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).  This recording will
 be removed by 28/2/2022.
 
