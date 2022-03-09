@@ -5,11 +5,11 @@ import argparse, sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", "--console", action="store_true", 
-    help="Use STDIN as input, overrides filename")
+    help="use STDIN as input, overrides filename")
 parser.add_argument("-t", "--tail", action="store_true", 
-    help="Tail the default input") 
+    help="tail the default input") 
 parser.add_argument("filename", default="test.log", nargs="?",
-    help="Input syslog file. Default: test.log")
+    help="input syslog file. Default: test.log")
 args = parser.parse_args()
 
 if args.console: 
