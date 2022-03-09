@@ -22,7 +22,7 @@ The script can also be configured to receive the input from stdin, typically thi
 the decompressed file bytestream from zip. clog can be used to remove the extra fields using pipes 
 without the use of intermediate files. An example of this could be:
 
-`unzip -c test.log | clog -c | xz test-small.zip -`
+`unzip -cq test.log | clog -c | xz > test.xz`
 
 ## Using the file option
 A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).  This recording will
