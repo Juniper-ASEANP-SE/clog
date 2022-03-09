@@ -12,6 +12,7 @@ f = open(args.input)
 s = ' '
 line = f.readline()
 
+
 while(1): # Loop forever
   while(line):
     elements = line.split(s)
