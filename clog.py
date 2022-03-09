@@ -23,7 +23,7 @@ line = f.readline()
 while(1): # Loop forever
   while(line):
     elements = line.split(s)
-    if (len(elements)>1): # Ensure line is actually a log (not an empty line)
+    if (len(elements) > 9): # Ensure line is actually a log (not a random line)
       if (elements[10] == 'created'):
         print(s.join(elements[:16]), elements[27]) # Grab first 17 elements, followed by 28th
       if (elements[10] == 'closed'):
