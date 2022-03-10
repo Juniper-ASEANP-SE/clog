@@ -18,7 +18,7 @@ else:
   f = open(args.filename)
 
 s = ' '
-line = f.readline()
+line = f.readline() # critical that we do not use readlines!
 
 while(1): # Loop forever
   while(line):
