@@ -3,7 +3,8 @@
 from time import sleep
 import argparse, sys
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Remove fields from MX-SPC3 generated syslog \
+    to be similar to MS-MPC.')
 parser.add_argument("-c", "--console", action="store_true", 
     help="use STDIN as input, overrides filename")
 parser.add_argument("-t", "--tail", action="store_true", 
