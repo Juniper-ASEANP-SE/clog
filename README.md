@@ -24,6 +24,9 @@ without the use of intermediate files. An example of this could be:
 
 `unzip -cq test.log.zip | clog -c | xz > test.log.xz`
 
+In actual production, you may want to use the -T0 or -Tn to enable xz to use multiple cores for the 
+fastest compression.
+
 ## Using the file option
 A demo can be viewed [here](https://asciinema.org/a/LfGPJHUbVZbOXgt7b3CSZ76Ib).  This recording will
 be removed by 28/2/2022.
