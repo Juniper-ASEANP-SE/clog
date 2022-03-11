@@ -3,6 +3,10 @@
 from time import sleep
 import argparse, sys
 
+# if there are quoted strings, we can use 
+# from shlex import split
+# out = split(quoted_string)
+
 parser = argparse.ArgumentParser(description='Remove fields from MX-SPC3 generated syslog \
     to be similar to MS-MPC.')
 parser.add_argument("-c", "--console", action="store_true", 
