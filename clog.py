@@ -34,8 +34,8 @@ while(1): # Loop forever
       if (elements[10] == 'closed'):
         print(s.join(elements[:16]), elements[34])
     line = f.readline()
-  if not(args.tail):
-    break # Do not continue to read if not tailing
-  sleep(1) # Sleep 1 second
+  if not(args.tail): # Do not continue to attempt to read if not tailing
+    break 
+  sleep(1) # Sleep 1 second to wait for new logs
   f.seek(0,1) # This is to reset the EOF, seeking 0 offset from current pos
   line = f.readline() # Attempt to read again
