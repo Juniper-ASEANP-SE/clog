@@ -7,7 +7,7 @@ facilities.
 
 Command:
 ```
-usage: clog.py [-h] [-c] [-t] [filename]
+usage: clog.py [-h] [-c] [-f] [filename]
 
 positional arguments:
   filename       input syslog file. Default: test.log
