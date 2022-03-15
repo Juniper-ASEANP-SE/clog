@@ -38,5 +38,7 @@ To simulate new logs going into `test.log`, you can open another terminal window
 If you have access to more logs, you can simply concat mulitple lines into test.log. Main.py will 
 run till it runs out of lines and then sleep for 1 second before checking again.
 
-## Please note that the -t option has been changed to -f to be consistent with other common CLI (eg. tail -f)
+## Using the --tail option
+
+Please note the previous -t that has been changed to -f to be consistent with other common CLI (eg. tail -f)
 You can use `clog -f filename` or `clog -cf` if you want clog to tail a file or stdin respectively.
