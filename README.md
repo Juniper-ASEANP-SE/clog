@@ -15,7 +15,7 @@ positional arguments:
 optional arguments:
   -h, --help     show this help message and exit
   -c, --console  use STDIN as input, overrides filename
-  -t, --tail     tail the default input
+  -f, --tail     tail the default input
 ```
 ## Using the -c option
 The script can also be configured to receive the input from stdin, typically this could be to receive
@@ -37,3 +37,6 @@ To simulate new logs going into `test.log`, you can open another terminal window
 
 If you have access to more logs, you can simply concat mulitple lines into test.log. Main.py will 
 run till it runs out of lines and then sleep for 1 second before checking again.
+
+## Please note that the -t option has been changed to -f to be consistent with other common CLI (eg. tail -f)
+You can use `clog -f filename` or `clog -cf` if you want clog to tail a file or stdin respectively.
