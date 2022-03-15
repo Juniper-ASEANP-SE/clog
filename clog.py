@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(description='Remove fields from MX-SPC3 generat
     to be similar to MS-MPC.')
 parser.add_argument("-c", "--console", action="store_true", 
     help="use STDIN as input, overrides filename")
-parser.add_argument("-t", "--tail", action="store_true", 
+parser.add_argument("-f", "--tail", action="store_true", 
     help="tail the default input") 
 parser.add_argument("filename", default="test.log", nargs="?",
     help="input syslog file. Default: test.log")
