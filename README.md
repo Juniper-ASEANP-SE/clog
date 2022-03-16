@@ -1,6 +1,6 @@
 # clog
 
-clog is a simple script to tail (with the -t option) a syslog generated file that is sent by CGNAT on MX-SPC3.  
+clog is a simple script to tail (with the -f option) a syslog generated file that is sent by CGNAT on MX-SPC3.  
 This script strips away some unnecessary fields to match the log by MS-MPC.  Currently, the 
 cleaned up log is send to console but can be easily modified to send via system or python3 log 
 facilities.
