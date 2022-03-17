@@ -1,6 +1,6 @@
 # clog
 
-clog is a simple script to tail (with the -t option) a syslog generated file that is sent by CGNAT on MX-SPC3.  
+clog is a simple script to tail (with the -f option) a syslog generated file that is sent by CGNAT on MX-SPC3.  
 This script strips away some unnecessary fields to match the log by MS-MPC.  Currently, the 
 cleaned up log is send to console but can be easily modified to send via system or python3 log 
 facilities.
@@ -19,10 +19,10 @@ optional arguments:
 ```
 ## Using the -c option
 The script can also be configured to receive the input from stdin, typically this could be to receive
-the decompressed file bytestream from zip. clog can be used to remove the extra fields using pipes 
+the decompressed file bytestream from lzo or zip. clog can be used to remove the extra fields using pipes 
 without the use of intermediate files. An example of this could be:
 
-`unzip -cq test.log.zip | clog -c | xz > test.log.xz`
+`lzop -dc test.log.lzo | ./clog.py -c | xz > test.log.xz`
 
 In actual production, you may want to use the -T0 or -Tn to enable xz to use multiple cores for the 
 fastest compression and processing as it is likely that xz will be the bottlenecking process.
