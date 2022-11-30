@@ -7,10 +7,10 @@ facilities.
 
 Command:
 ```
-usage: clog.py [-h] [-c] [-f] [filename]
+usage: clog.py [-h] [-c] [-f] [logfile]
 
 positional arguments:
-  filename       input syslog file. Default: test.log
+  logfile        input syslog file. Default: test.log
 
 optional arguments:
   -h, --help     show this help message and exit
