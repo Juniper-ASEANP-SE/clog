@@ -13,7 +13,7 @@ parser.add_argument("-c", "--console", action="store_true",
     help="use STDIN as input, overrides filename")
 parser.add_argument("-f", "--tail", action="store_true", 
     help="tail the default input") 
-parser.add_argument("filename", default="test.log", nargs="?",
+parser.add_argument("logfile", default="test.log", nargs="?",
     help="input syslog file. Default: test.log")
 args = parser.parse_args()
 
