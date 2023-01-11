@@ -21,7 +21,7 @@ args = parser.parse_args()
 if args.console: 
   f = sys.stdin
 else:
-  f = open(args.filename)
+  f = open(args.logfile)
 
 s = ' '
 line = f.readline() # critical that we do not use readlines on multi GB logfiles!
